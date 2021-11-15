@@ -60,9 +60,12 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
+}
 
-
-
+.notas_tel_img {
+    flex: 3;
+    width: 100%;
+    height: auto;
 }
 
 .timbre-sec {
