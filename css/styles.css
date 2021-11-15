@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+/* CSS usado em antigo layout do <nav>:
+
+#menu-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    max-width: 980px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#menu-horizontal ul {
+    max-width: 1000px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-horizontal ul li {
+    display: inline;
+}
+
+#menu-horizontal ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+#menu-horizontal ul li a:hover {
+    background-color: rgba(24, 233, 198, 0.514) ;
+
+}
+
+*/
+
+body {
+    background-image: url("../images/notas-partitura-musicais.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#timbre_instr_img {
+    flex: 3;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+
+
+}
+
+.timbre-sec {
+    float: left;
+
+
+}
+
+.div_mcontent {
+    text-align: justify;
+    background: linear-gradient(125deg, rgba(115, 240, 157, 0.89), rgba(63, 226, 150, 0.918));
+    max-width: 920px;
+    min-height: fit-content;
+    border-radius: 10px;
+    padding: 30px;
+    animation: mudar_de_cor 6s;
+    animation-delay: 1s;
+}
+
+@keyframes mudar_de_cor {
+    0% {
+        background-color: rgba(4, 219, 104, 0.685);
+    }
+
+    50% {
+        background-color: rgb(180, 169, 16);
+    }
+
+    100% {
+        background-color: rgba(52, 170, 105, 0.678);
+    }
+
+}
+
+#div-timbre {
+
+    min-height: 750px;
+}
+
+.grelha_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+
+}
+
+/* Codigo do Botão*/
+
+.button-verde {
+    position: relative;
+    background-color: rgb(68, 177, 73);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 9px 0 rgb(25, 100, 41), 0px 9px 25px rgba(0, 0, 0, .7);
+    margin: 30px auto;
+    width: 150px;
+    text-align: center;
+
+}
+
+.button-verde:hover {
+    background-color: rgb(54, 156, 59);
+    color: rgb(189, 189, 22);
+    border-radius: 10px;
+    width: 190px;
+    font-size: 3em;
+
+}
+
+.button-verde:active {
+    box-shadow: 0 3px 0 rgb(32, 112, 58), 0px 3px 6px rgba(0, 0, 0, .7);
+    position: center;
+    top: 6px;
+}
